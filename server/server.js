@@ -14,7 +14,10 @@ const app = express()
 connectDB()
 
 //Middleware
-app.use(cors())
+app.use(cors({
+    origin:["http://localhost:5173","https://expense-tracker-mern-1-zc0t.onrender.com"],
+    credentials:true,
+}))
 app.use(express.json())
 app.use("/api/auth",authRoutes)
 app.use("/api/test",testRoutes)
