@@ -15,7 +15,7 @@ connectDB()
 
 //Middleware
 app.use(cors({
-    origin:["http://localhost:5173","https://expense-tracker-mern-1-zc0t.onrender.com"],
+    origin:["http://localhost:5173","https://expense-tracker-mern-nznzjbrqb-basil-icholia-s-projects.vercel.app"],
     credentials:true,
 }))
 app.use(express.json())
